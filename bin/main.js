@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var electron_1 = require("electron");
 var app_root_path_1 = require("app-root-path");
 // Keep a global reference of the window object, if you don't, the window will
@@ -9,10 +9,10 @@ function createWindow() {
     // Create the browser window.
     win = new electron_1.BrowserWindow({
         width: 800,
-        height: 600
+        height: 600,
     });
     // Load the angular app.
-    win.loadFile(app_root_path_1.resolve('dist/index.html'));
+    win.loadFile(app_root_path_1.resolve('dist/control-panel/index.html'));
     // Emitted when the window is closed.
     win.on('closed', function () {
         // Dereference the window object, usually you would store windows
@@ -42,3 +42,4 @@ electron_1.app.on('activate', function () {
 });
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+//# sourceMappingURL=main.js.map
